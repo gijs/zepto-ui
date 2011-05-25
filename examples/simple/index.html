@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Zepto UI</title>
+   	
+		<!-- <link href="../../src/css/ipad.css" media="only screen and (max-device-width: 1024px)" rel="stylesheet" type="text/css" /> -->
+		<!-- <link href="../../src/css/iphone.css" media="only screen and (max-device-width: 480px)" rel="stylesheet" type="text/css" /> -->
+		
+		<link href="../../src/css/ipad.css" media="screen" rel="stylesheet" type="text/css" />
+		
+		<script type="text/javascript" src="../../lib/iscroll.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript">
+		$(document).bind('touchmove', function(e) { e.preventDefault(); return false; })
+		</script>
+
+		<script type="text/javascript" src="../../src/js/core.js"></script>
+
+   	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+   	<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="format-detection" content="telephone=no" />
+	</head>
+	<body class="splitview">
+		<nav>
+			<header>
+				<h1>Splitview Navigation</h1>
+			</header>
+			<a href="#page-1">Option 1</a>
+			<a href="#page-2" class="selected">Option 2</a>
+			<a href="#page-3">Option 3</a>
+			<a href="#page-4">Option 4</a>
+			<a href="#page-5">Option 5</a>
+			<a href="#page-6">Option 6</a>
+		</nav>
+		<section id="page-1">
+			<header>
+				<h1>UI Kitchen Sink</h1>
+			</header>
+			<content>
+				<h1>Option Lists</h1>
+				<p>Option lists are incredibly easy to create. They are bounded by fieldset tags and are designed to be flexible whilst maintaining a polished look.</p>
+				<fieldset>
+					<div class="field" href="#asd">
+						<img src="img/icon.png" />
+						<div class="left">Double Line<br /><small>With some description, an icon, right text and href.</small></div>
+						<div class="right">Off</div>
+					</div>
+					<div class="field">
+						<div class="left">Single Line</div>
+						<div class="right"><span class="bubble-gray">23</span></div>
+					</div>
+				</fieldset>
+				<p class="center">Footer text. If you need it?</p>
+				
+				<h1>User Forms</h1>
+				<p>Embeddable forms use HTML5 placeholders to provide the native effect. Buttons are also embeddable into option fields.</p>
+				<fieldset>
+					<div class="field"><input type="text" placeholder="username" /></div>
+					<div class="field"><input type="password" placeholder="password" /></div>
+				</fieldset>
+				<fieldset>
+					<button disabled>Disabled Button</button>
+				</fieldset>
+				<fieldset>
+					<button>Enabled Button</button>
+				</fieldset>
+			</content>
+		</section>
+	</body>
+</html>
